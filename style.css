@@ -1,0 +1,45 @@
+/* 
+IMPORTED CUSTOM FONTS FROM GOOGLE
+font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Bree Serif', serif; 
+*/
+
+.heading {
+  font-family: 'Bree Serif', serif; 
+}
+
+.hero {
+  background-color: var(--bs-indigo);
+}
+
+.content {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.shadow {
+  background-color: #00000080;
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+/* WIREFRAMES */
+.box0 { border: 2px solid black; }
+.box1 { border: 2px solid red; }
+.box2 { border: 2px solid blue; }
+.box3 { border: 2px solid green; }
+
+
+/* Checks if the size is less than the large breakpoint on bootstrap */
+@media (max-width: 992px) {
+
+  /* Makes the navigation bar fixed at the top */
+  .nav-fix {
+    position: fixed;
+    z-index: 1030;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
