@@ -16,12 +16,12 @@ The aim was to make a personal website displaying your hobbies, skills etc. -->
 
 <body class="content">
   <!--Navbar section-->
-  <section id="navbar">
+  <header id="navbar">
     <nav class="navbar navbar-expand-lg bg-dark-subtle nav-fix">
 
       <div class="container-fluid">
         <!-- Made the icon more grayer to match with other nav items -->
-        <img src="./images/brand.png" alt="brand icon" width="30" style="filter: brightness(75%)">
+        <img src="./images/brand.png" alt="brand icon" width="30" class="brand-icon brand-icon-dark">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,12 +46,19 @@ The aim was to make a personal website displaying your hobbies, skills etc. -->
         </div>
       </div>
     </nav>
-  </section>
+  </header>
+
+  <!-- Color mode button -->
+  <button class="btn btn-purple position-fixed bottom-0 end-0 m-4 pb-2 d-none d-lg-block">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+      <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+    </svg>
+  </button>
 
   <!--Hero section-->
-  <section id="home" class="hero">
+  <main id="home" class="hero">
     <div class="container py-3">
-      <div class="d-md-flex flex-row justify-content-center my-5 py-3">
+      <div class="d-md-flex flex-row justify-content-center my-5 pt-5 pb-2 py-lg-3">
         <div class="mx-auto col-3 mx-md-0 col-md-4">
           <img src="./images/braces.png" class="d-block img-fluid mx-auto" alt="braces symbol">
         </div>
@@ -63,7 +70,7 @@ The aim was to make a personal website displaying your hobbies, skills etc. -->
         </div>
       </div>
     </div>
-  </section>
+  </main>
 
   <!--Skills section-->
   <section id="skills">
@@ -130,7 +137,7 @@ The aim was to make a personal website displaying your hobbies, skills etc. -->
       </div>
 
       <!-- The caraousel part -->
-      <div id="carousel" class="carousel slide mt-md-5 mt-2">
+      <div id="carousel" class="carousel slide mt-md-5 mt-2" data-bs-theme="dark">
         <div class="carousel-indicators invert">
           <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -194,7 +201,7 @@ The aim was to make a personal website displaying your hobbies, skills etc. -->
   </section>
 
   <!--Footer section-->
-  <section id="social" class="bg-dark-subtle">
+  <footer id="social" class="bg-dark-subtle">
     <div class="container pb-5 pt-3">
       <hr class="mt-0">
       <div class="row px-2">
@@ -229,8 +236,9 @@ The aim was to make a personal website displaying your hobbies, skills etc. -->
         </div>
       </div>
     </div>
-  </section>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
